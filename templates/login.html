@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Login Seller</title>
+    <style type="text/css">
+      ::-webkit-input-placeholder {
+      font-size: 14px;
+      color: #d0cdfa;
+      text-transform: uppercase;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: bold;
+      }
+    </style>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  </head>
+  <body >
+    <form action="/login_user/" method="POST">{% csrf_token %}
+      <div style="background-color:#e7e7e7;height:550px;padding:5px;text-align:center;">
+        <input type="email" name="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required title="example@gmail.com" style="width: 488px;margin-left: 441px;margin-top: 200px;height: 50px;">
+        <input type="password" name="password" class="form-control" pattern=".{5,10}" required title="5 to 10 characters"  style="width: 488px;margin-left: 441px;margin-top: 24px;height: 50px;">
+        <button type="submit" class="btn btn-info"  style="margin-left: 85px;border:1px solid rgb(84,84,84); width: 487px;margin-top: 25px;background-color: #717171;color:black;height: 50px;">LOG IN</button>
+        <a href="">
+          <p class="text-center" style="margin-left: 442px;width: 487px;margin-top: 25px;color:black;"> <i>Forgot Password</i></p>
+        </a>
+      </div>
+    </form>
+  </body>
+</html>

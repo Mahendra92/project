@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Home Page</title>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	</head>
+	<body>
+		<form action="/login/" method="POST">
+			{% csrf_token %}
+			<button type="submit"  style="margin-left: 400px;margin-top: 213px;background-color: #717171;color:black;width: 487px;height: 50px;">Log In</button>
+		</form>
+		<form action="/register/" method="POST">
+			{% csrf_token %}
+			<button type="submit"  style="margin-left: 400px;margin-top: 50px;background-color: #717171;color:black;width: 487px;height: 50px;">Register</button>
+		</form>
+	</body>
+</html>
